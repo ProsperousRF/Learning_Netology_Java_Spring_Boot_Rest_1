@@ -14,7 +14,7 @@ import java.util.List;
 public class AuthorizationService {
     UserRepository userRepository;
 
-    List<Authorities> getAuthorities(String user, String password) {
+    public List<Authorities> getAuthorities(String user, String password) {
         if (isEmpty(user) || isEmpty(password)) {
             throw new InvalidCredentials("User name or password is empty");
         }
