@@ -1,5 +1,6 @@
 package ru.netology.authorizationservice.repository;
 
+import org.springframework.stereotype.Repository;
 import ru.netology.authorizationservice.exception.InvalidCredentials;
 import ru.netology.authorizationservice.model.Authorities;
 
@@ -11,6 +12,7 @@ import java.util.Map;
 /**
  * @author Stanislav Rakitov
  */
+@Repository
 public class UserRepository {
     public List<Authorities> getUserAuthorities(String user, String password) {
 
